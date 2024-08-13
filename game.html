@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Sales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .featured-games {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .game {
+            background-color: #eaeaea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .game img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .game h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .game p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        .contact-form h2 {
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form .form-group input, .contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form .form-group button {
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form .form-group button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Sales</h1>
+        <p>Find the best deals on your favorite games!</p>
+    </header>
+
+    <div class="container">
+        <section class="featured-games">
+            <div class="game">
+                <img src="game1.jpg" alt="Action Game 1">
+                <h3>Epic Adventure</h3>
+                <p>$29.99</p>
+                <p>Join the epic journey in this thrilling adventure game. Stunning graphics and engaging storyline!</p>
+            </div>
+            <div class="game">
+                <img src="game2.jpg" alt="Strategy Game 1">
+                <h3>Ultimate Strategy</h3>
+                <p>$24.99</p>
+                <p>Master the art of strategy with this captivating game. Build, conquer, and rule!</p>
+            </div>
+            <div class="game">
+                <img src="game3.jpg" alt="RPG Game 1">
+                <h3>Fantasy Realm</h3>
+                <p>$34.99</p>
+                <p>Immerse yourself in a magical world of fantasy. Epic quests and enchanting characters await!</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-inquiry" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

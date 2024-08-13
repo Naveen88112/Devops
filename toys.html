@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Sales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .featured-toys {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .toy {
+            background-color: #eaeaea;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .toy img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .toy h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .toy p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        .contact-form h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form .form-group input, .contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form .form-group button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form .form-group button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toy Sales</h1>
+        <p>Explore our wide range of toys for all ages!</p>
+    </header>
+
+    <div class="container">
+        <section class="featured-toys">
+            <div class="toy">
+                <img src="toy1.jpg" alt="Toy 1">
+                <h3>Build-A-Block Set</h3>
+                <p>$29.99</p>
+                <p>Perfect for kids to enhance creativity and build their imagination.</p>
+            </div>
+            <div class="toy">
+                <img src="toy2.jpg" alt="Toy 2">
+                <h3>Remote-Controlled Car</h3>
+                <p>$49.99</p>
+                <p>Exciting RC car with easy controls and high speed fun.</p>
+            </div>
+            <div class="toy">
+                <img src="toy3.jpg" alt="Toy 3">
+                <h3>Interactive Plush Bear</h3>
+                <p>$39.99</p>
+                <p>Cuddly bear with interactive features that entertain and educate.</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-inquiry" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
